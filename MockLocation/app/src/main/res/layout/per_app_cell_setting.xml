@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell_switch"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toLeftOf="@+id/cell_switch"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cell_topic"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cell_tips"
+                android:layout_marginTop="5dip"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/cell_tweaks">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cell_type"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/cell_type"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基站类型"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:text="必须与手机类型相同"
+                android:layout_marginTop="5dip"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="MCC"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:id="@+id/mnc"
+            android:text="MNC"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:id="@+id/lac"
+            android:text="LAC/TAC"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:id="@+id/cid"
+            android:text="CID"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--mcc mnc部分视情况可更改为固定值而不使用edittext组件-->
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:id="@+id/mcc_editText"
+            android:gravity="center"
+            android:text="460"
+            android:focusable="false"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:id="@+id/mnc_editText"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:id="@+id/lac_editText"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:id="@+id/cid_editText"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

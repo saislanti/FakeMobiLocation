@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sais.mocklocation.PerAppSettingActivity"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:id="@+id/app_item_setting"
+                    android:layout_below="@+id/toolbar_setting"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_icon_setting"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/app_icon_setting"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/app_name_setting"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pkg_name_setting"
+                android:layout_marginTop="5dip"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <include
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            layout="@layout/per_app_gps_setting"/>
+
+        <include
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/per_app_gps_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/per_app_cell_setting"/>
+
+
+
+</LinearLayout>

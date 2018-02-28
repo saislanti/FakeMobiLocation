@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">位置模拟</string>
+    <string name="toolbar_name">模拟位置</string>
+    <string name="search_hint">请输入应用名搜索</string>
+    <string name="title_activity_per_app_settings">设置</string>
+    <string name="gps_topic">使用GPS模拟</string>
+    <string name="cell_topic">使用基站模拟</string>
+    <string name="wifi_topic">WIFI模拟</string>
+    <string name="gps_tips">点击按钮可打开地图拾取坐标。由于不同应用定位处理不同，仅使用GPS模拟可能会失败。</string>
+    <string name="cell_tips">GPS模拟失败时可使用基站定位模拟</string>
+    <string name="save">设置保存成功</string>
+
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_export">导出</string>
+    <string name="menu_import">导入</string>
+    <string name="menu_about">关于</string>
+
+    <string name="menu_save">保存</string>
+    <string name="menu_launch">启动</string>
+    <string name="menu_settings">设置</string>
+
+    <string name="app_loading">正在加载App...</string>
+    <string name="app_about">该应用是由saiyyy开发的Xposed模块。</string>
+    <string name="app_description">本模块允许在不开启系统模拟位置的情况下，实现以下功能：
+        \n- 模拟GPS定位
+        \n- 模拟基站定位
+        \n- 修改连入的无线MAC地址</string>
+    <string name="app_notactive_warning">注意: 使用前请确认是否在Xposed框架中开启了该模块，勾选后才能正常使用功能</string>
+
+    <string name="imp_exp_file_doesnt_exist">File does not exist: %s</string>
+    <string name="imp_exp_confirm">Replace all settings with the ones that are about to be imported?</string>
+    <string name="imp_exp_exported">Settings exported to file: %s</string>
+    <string name="imp_exp_export_error">Export failed: %s</string>
+    <string name="imp_exp_import_error">Import failed: %s</string>
+    <string name="imp_exp_invalid_import_file">Invalid or empty file to import: %s</string>
+    <string name="imp_exp_imported">Import successful; settings replaced</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_latitude">纬度</string>
+    <string name="settings_longitude">经度</string>
+    <string name="settings_lac">LAC</string>
+    <string name="settings_cid">CID</string>
+    <string name="settings_mnc">MNC</string>
+    <string name="settings_celltype">CellType</string>
+    <string name="settings_map">MAP</string>
+
+    <!-- Saving settings -->
+    <string name="settings_unsaved_title">提示</string>
+    <string name="settings_unsaved_detail">您尚未保存所做的修改，
+是否确认返回并放弃修改？</string>
+    <string name="settings_apply_title">应用设置</string>
+    <string name="settings_apply_detail">是否终止进程以便下次启动时应用新设置？</string>
+
+    <string name="settings_celltype_gsm">GSM</string>
+    <string name="settings_celltype_lte">LTE</string>
+    <string name="settings_celltype_cdma">CDMA</string>
+    <string name="settings_celltype_wcdma">WCDMA</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+</resources>
